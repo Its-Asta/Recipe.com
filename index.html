@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/cake.jpg" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="white">
+            <div class="container">
+                <a href="#" class="brand-logo left">
+                    <img src="img/rcon.png" class="responsive-img" alt="">
+                </a>
+                <ul class="right">
+                    <li><a href="home" class="orange-text text-darken-4 bold">Home</a></li>
+                    <li><a href="comments" class="orange-text text-darken-4 bold">Comments</a></li>
+                    <li><a href="cakes" class="orange-text text-darken-4 bold">Cakes</a></li>
+                    <li><a href="soups" class="orange-text text-darken-4 bold">Soups</a></li>
+                    <li><a href="chicken" class="orange-text text-darken-4 bold">Chicken</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slider">
+            <ul class="slides">
+                <li><img src="img/celery_soup.jpg" alt="" class="responsive-img"></li>
+                <li><img src="img/winter_soup.jpg" alt="" class="responsive-img"></li>
+                <li><img src="img/chicken_4.jpg" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+<script src="js/JQuery.js"></script>
+<script src="js/materialize.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slider(
+            {
+                height: 450,
+                duration: 3000,
+                interval: 3000
+            }
+        )
+
+
+    });
+</script>
+</html>
