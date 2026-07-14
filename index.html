@@ -7,42 +7,635 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Recipe.com</title>
+    <style>
+        @font-face {
+            font-family: 'JosefinSans-VariableFont_wght';
+            src: url('/fonts/JosefinSans-VariableFont_wght.ttf');
+        }
+
+        *{
+            font-family: 'JosefinSans-VariableFont_wght';
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        span{
+            font-size: 11px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="white">
-            <div class="container">
-                <a href="#" class="brand-logo left">
-                    <img src="img/logo.png" class="responsive-img" alt="">
-                </a>
-                <ul class="right">
-                    <li><a href="home" class="orange-text text-darken-4 bold">Home</a></li>
-                    <li><a href="comments" class="orange-text text-darken-4 bold">Comments</a></li>
-                    <li><a href="cakes" class="orange-text text-darken-4 bold">Cakes</a></li>
-                    <li><a href="soups" class="orange-text text-darken-4 bold">Soups</a></li>
-                    <li><a href="chicken" class="orange-text text-darken-4 bold">Chicken</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="white scrollspy" id="top">
+                <div class="nav-wrapper container">
+                    <a href="#" class="brand-logo left">
+                        <img src="img/logo.png" class="responsive-img" alt="">
+                    </a>
+                    <ul class="right">
+                        <li><a href="index.html" class="orange-text text-darken-4 bold">Home</a></li>
+                        <li><a href="cakes.html" class="orange-text text-darken-4 bold">Cakes</a></li>
+                        <li><a href="soups.html" class="orange-text text-darken-4 bold">Soups</a></li>
+                        <li><a href="chicken.html" class="orange-text text-darken-4 bold">Chicken</a></li>
+                        <li><a href="#reviews" class="orange-text text-darken-4 bold">Reviews</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <div class="slider">
             <ul class="slides">
-                <li><img src="img/cake_fruit.jpg" alt="" class="responsive-img"></li>
                 <li><img src="img/shrimp_soup.jpg" alt="" class="responsive-img"></li>
-                <li><img src="img/chicken_3.jpg" alt=""></li>
-                <li><img src="img/dessert_chocolate.jpg" alt=""></li>
-                <li><img src="img/ginger_cake.webp" alt=""></li>
+                <li><img src="img/dessert_chocolate.jpg" alt="" class="responsive-img"></li>
+                <li><img src="img/chicken.jpg" alt="" class="responsive-img"></li>
+                <li><img src="img/cake_fruit.jpg" alt="" class="responsive-img"></li>
             </ul>
         </div>
     </header>
 
     <main>
+        <div class="container">
+            <h4 class="orange-text text-darken-4">Hello there, foodies!</h4>
+            <p class="black-text">Welcome to your new favourite corner of the web where deliciousness meets simplicity. Whether you're craving something sweet and fluffy like a freshly baked cake, in the mood for a hearty and flavorful chicken dish, or looking for comfort in a warm bowl of soup, you'll find it all right here. Our recipes are crafted to be easy to follow, packed with flavor, and perfect for every occasion-whether you're cooking for family, friends, or just yourself. So grab your apron and let's make something mouthwatering together!</p>
+
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header orange darken-4 white-text">
+                                <i class="material-icons left">label</i>
+                                <span>CAKES!</span>
+                            </div>
+
+                            <div class="collapsible-body">
+                                <img class="responsive-img" src="img/sponge_cake.webp" alt="">
+                                <p>Indulge in sweet and irresistible cake recipes perfect for every celebration</p>
+                                <button class="btn btn-flat orange darken-4"><a href="cakes.html" class="white-text">ALL CAKE RECIPES</a></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m6 l4">
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header orange darken-4 white-text">
+                                <i class="material-icons left">label</i>
+                                <span>SOUPS</span>
+                            </div>
+                            
+                            <div class="collapsible-body">
+                                <img class="responsive-img" src="img/mexican_soup.webp" alt="">
+                                <p>Indulge in sweet and irresistible cake recipes perfect for every celebration</p>
+                                <button class="btn btn-flat orange darken-4"><a href="cakes.html" class="white-text">ALL CAKE RECIPES</a></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m6 l4">
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header orange darken-4 white-text">
+                                <i class="material-icons left">label</i>
+                                <span>CHICKEN</span>
+                            </div>
         
+                            <div class="collapsible-body">
+                                <img class="responsive-img" src="img/chicken_8.webp" alt="">
+                                <p>From crispy to juicy, our chicken recipes bring bold flavours straight to your table</p>
+                                <button class="btn btn-flat orange darken-4"><a href="chicken.html" class="white-text">ALL CHICKEN RECIPES</a></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container border-bottom"></div>
+
+        <div class="container">
+            <h4 class="orange-text text-darken-4 center-align scrollspy" id="reviews">What Our Customers Say</h4>
+            <div class="row">
+                <div class="col s12 m5 l6">
+                    <p><span class="deep-orange-text text-accent-4">"</span>I used to be intimidated in the kitchen, but the step-by-step cake recipes here gave me the confidence to bake my first chocolate cake-and it turned out amazing. Now my kids ask for it every weekend<span class="deep-orange-text text-accent-4">!"</span>
+                    <p></p>
+                    <p class="orange-text text-darken-4">-Ryan Kingfisher</p>
+                    </p>
+                </div>
+
+                <div class="col s12 m5 l6">
+                    <p><span class="deep-orange-text text-accent-4">"</span>I tried the honey garlic chicken from Recipe.com last night, and my whoke family couldn't stop raving about it. It's simple, quick, and absolutely delicious.<span class="deep-orange-text text-accent-4">"</span>
+                    <p></p>
+                    <p class="orange-text text-darken-4">-Sarah James</p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <p><span class="deep-orange-text text-accent-4">"</span>The soup recipes on Recipe.com are my go-to whenever I want comfort food. The creamy tomato basil soup is now a staple in my home.<span class="deep-orange-text text-accent-4">"</span>
+                    <p></p>
+                    <p class="orange-text text-darken-4">-Linda Braun</p>
+                    </p>
+                </div>
+
+                <div class="col s12 m6 l6">
+                    <p><span class="deep-orange-text text-accent-4">"</span>What I love about Recipe.com is the variety-cakes for my sweet tooth, chicken for dinner, and soups for lazy Sundays. It's like having a personal chef online.<span class="deep-orange-text text-accent-4">"</span>
+                    <p></p>
+                    <p class="orange-text text-darken-4">-Abel Smith</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARALLAX ONE -->
+        <div class="parallax-container  hide-on-small-and-down">
+            <div class="parallax">
+                <img class="responsive-img" src="img/cake.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="hide-on-med-and-up">
+            <img class="responsive-img" src="img/cake.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <h4 class="orange-text text-darken-4">Cakes</h4>
+            <h6>Cake is flour, sugar, and other ingredients and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate and which share features with desserts such as pastries, meringues, custards, and pies.</h6>
+
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/sponge_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Sponge Cake</h6>
+                        <p>A light, fluffy classic perfect for any <br> occasion.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#sponge_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="sponge_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Sugar</li>
+                                        <li>Eggs</li>
+                                        <li>Baking Powder</li>
+                                        <li>Butter</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Sponge+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/velvet_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Velvet Cake</h6>
+                        <p>Rich, moist, and elegantly smooth with a hint of cocoa.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#velvet_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="velvet_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Cocoa Powder</li>
+                                        <li>Sugar</li>
+                                        <li>Red Food Coloring</li>
+                                        <li>Vegetable Oil</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Velvet+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/courgette_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Courgette Cake</h6>
+                        <p>A moist and wholesome cake with a fresh twist from courgettes.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#courgette_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="courgette_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Courgette(zucchini)</li>
+                                        <li>Eggs</li>
+                                        <li>Vegetable Oil</li>
+                                        <li>Sugar</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Courgette+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <button class="btn btn-flat orange darken-4 center">
+                    <a class="white-text" href="cakes.html">SEE ALL RECIPES</a>
+                </button>
+            </div>
+
+            <div>
+                <h4></h4>
+            </div>
+        </div>
+
+        <!-- PARALLAX TWO -->
+        <div class="parallax-container  hide-on-small-and-down">
+            <div class="parallax">
+                <img class="responsive-img" src="img/soup.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="hide-on-med-and-up">
+            <img class="responsive-img" src="img/soup.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <h4 class="orange-text text-darken-4">Soups</h4>
+            <h6>Soup is one of the world's oldest and most universal foods, said Janet Clarkson, author of the book "Soup: A Global History". "Every culture has soe kind of soup", she said. "It's got very ancient roots". Early people simmered it in everything from turtle shells to lengths of bamboo, she writes in the book, turning out metal soup pots in the Bronze Age.</h6>
+
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/lentil_soup.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Lentil Soup</h6>
+                        <p>Hearty, protein-packed, and perfect for a filling meal.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#lentil_ingredients" class="modal-trigger orange-text text-darken-4">CONTENTS</a>
+                                <div class="modal" id="lentil_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Red lentils</li>
+                                        <li>Carrots</li>
+                                        <li>Garlic</li>
+                                        <li>Tomatoes</li>
+                                        <li>Onion</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+prepare+Lentil+Soup" class="orange-text text-darken-4" target="_blank">COOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/olive_soup.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Olive Soup</h6>
+                        <p>A Mediterranean-inspired soup with bold, briny flavors.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#olive_ingredients" class="modal-trigger orange-text text-darken-4">CONTENTS</a>
+                                <div class="modal" id="olive_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Green Olives</li>
+                                        <li>Garlic</li>
+                                        <li>Tomatoes</li>
+                                        <li>Olive Oil</li>
+                                        <li>Onion</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+prepare+Olive+Soup" class="orange-text text-darken-4" target="_blank">COOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/miso_soup.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Miso Soup</h6>
+                        <p>A light Japanese classic with savory umami richness.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#miso_ingredients" class="modal-trigger orange-text text-darken-4">CONTENTS</a>
+                                <div class="modal" id="miso_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Miso paste</li>
+                                        <li>Dashi stock</li>
+                                        <li>Tofu</li>
+                                        <li>Seaweed(wakame)</li>
+                                        <li>Spring Onion</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+prepare+Miso+Soup" class="orange-text text-darken-4" target="_blank">COOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <button class="btn btn-flat orange darken-4 center">
+                    <a class="white-text" href="soups.html">SEE ALL RECIPES</a>
+                </button>
+            </div>
+
+            <div>
+                <h4></h4>
+            </div>
+        </div>
+
+        <!-- PARALLAX THREE -->
+        <div class="parallax-container  hide-on-small-and-down">
+            <div class="parallax">
+                <img class="responsive-img" src="img/chicken.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="hide-on-med-and-up">
+            <img class="responsive-img" src="img/chicken.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <h4 class="orange-text text-darken-4">Chicken</h4>
+            <h6>Chicken in all its forms-from breasts to thighs, or grilled to frieed-has long been considered the dinner winner winner, and rightfully so. Unfortunately, that can mean falling into a dinner rut much too easily for our liking. If you're like us and just can't bear to make your (or your family's) old standbys for the umpteenth time, we've got you.</h6>
+
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/chicken_5.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Oregano Wings</h6>
+                        <p>Crispy chicken wings infused with fragrant oregano seasoning.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#oregano_ingredients" class="modal-trigger orange-text text-darken-4">CONTENTS</a>
+                                <div class="modal" id="oregano_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Chicken wings</li>
+                                        <li>Oregano</li>
+                                        <li>Olive oil</li>
+                                        <li>Garlic</li>
+                                        <li>Lemon juice</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+prepare+Oregano+Chicken+Wings" class="orange-text text-darken-4" target="_blank">PREPARE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/chicken_11.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Mashed Wings</h6>
+                        <p>Tender wings coated with a flavorful, mashed-style marinade.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#mashed_ingredients" class="modal-trigger orange-text text-darken-4">CONTENTS</a>
+                                <div class="modal" id="mashed_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Chicken wings</li>
+                                        <li>Garlic</li>
+                                        <li>Ginger</li>
+                                        <li>Soy sauce</li>
+                                        <li>Butter</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+prepare+Mashed+Chicken+Wings" class="orange-text text-darken-4" target="_blank">PREPARE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/chicken_1.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Buttered Wings</h6>
+                        <p>Golden, juicy wings tossed in rich, melted butter.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#buttered_ingredients" class="modal-trigger orange-text text-darken-4">CONTENTS</a>
+                                <div class="modal" id="buttered_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Chicken wings</li>
+                                        <li>Butter</li>
+                                        <li>Garlic</li>
+                                        <li>Black pepper</li>
+                                        <li>Salt</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+prepare+Buttered+Chicken+Wings" class="orange-text text-darken-4" target="_blank">PREPARE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <button class="btn btn-flat orange darken-4 center">
+                    <a class="white-text" href="chicken.html">SEE ALL RECIPES</a>
+                </button>
+            </div>
+
+            <div>
+                <h4></h4>
+            </div>
+        </div>
+        
+        <div class="grey padding lighten-3">
+            <div class="container">
+                <div class="row orange-text text-darken-4">
+                    <div class="col s12 m5 l5">
+                        <h4>Contact Us Today!</h4>
+                        <p class="black-text">Do you want to submit a new recipe? Send a message to get started</p>
+                        <button class="btn btn-flat orange darken-4">
+                            <a href="#" class="white-text">
+                                <i class="material-icons right white-text">phone</i>
+                                CALL US NOW
+                            </a>
+                        </button>
+                    </div>
+                    <div class="col s12 m2 l2"></div>
+                    <div class="col s12 m5 l5">
+                        <form>
+                            <div class="input-field col s12">
+                                <input id="user_name" type="text" class="validate">
+                                <label for="user_name">Your Name</label>
+                            </div>
+        
+                            <div class="input-field col s12">
+                                <input type="email" name="" id="email" class="validate">
+                                <label for="email">Enter Your Email</label>
+                            </div>
+        
+                            <div class="input-field col s12">
+                                <input id="text" type="text" class="validate">
+                                <label for="text">Your Message</label>
+                            </div>
+        
+                            <div class="center">
+                                <button class="btn btn-flat orange darken-4 btn-large">
+                                    <a class="white-text" href="">SUBMIT</a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-
+    <footer class="page-footer black" >
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m3 l3">
+                        <h4><img src="img/logo.png" alt=""></h4>
+                        <p>Your one stop for all cake, soup and chicken recipes. Make something good today.</p>
+                    </div>
+                    <div class="col s12 m5 l5"></div>
+                    <div class="col s12 m3 l3">
+                        <h4 class="orange-text text-darken-4">Quick Links</h4>
+                        <ul>
+                            <li><a href="#top" class="white-text">Back to top</a></li>
+                            <li><a href="cakes.html" class="white-text">Cakes</a></li>
+                            <li><a href="soups.html" class="white-text">Soups</a></li>
+                            <li><a href="chicken.html" class="white-text">Chicken</a></li>
+                            <li><a href="#reviews" class="white-text">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="footer-copyright orange darken-4">
+            <div class="container center">
+                <p>&copy; 2026 Recipe.com | CORE-TECH | COLLINS OGBEBOR</p>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="js/JQuery.js"></script>
@@ -51,13 +644,19 @@
     $(document).ready(function(){
         $('.slider').slider(
             {
-                height: 450,
+                height: 400,
                 duration: 3000,
                 interval: 3000
             }
-        )
+        ),
 
+        $('.collapsible').collapsible(),
 
+        $('.parallax').parallax(),
+
+        $('.modal').modal(),
+
+        $('.scrollspy').scrollSpy()
     });
 </script>
 </html>
