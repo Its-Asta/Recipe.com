@@ -10,12 +10,12 @@
     <title>Recipe.com</title>
     <style>
         @font-face {
-            font-family: 'JosefinSans-VariableFont_wght';
-            src: url('/fonts/JosefinSans-VariableFont_wght.ttf');
+            font-family: 'JosefinSans-Regular';
+            src: url('/fonts/static/JosefinSans-Regular');
         }
 
         *{
-            font-family: 'JosefinSans-VariableFont_wght';
+            font-family: 'JosefinSans-Regular';
         }
 
         p{
@@ -35,7 +35,20 @@
                     <a href="#" class="brand-logo left">
                         <img src="img/logo.png" class="responsive-img" alt="">
                     </a>
-                    <ul class="right">
+
+                    <a href="#menu" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="orange-text text-darken-4 bold">Home</a></li>
+                        <li><a href="cakes.html" class="orange-text text-darken-4 bold">Cakes</a></li>
+                        <li><a href="soups.html" class="orange-text text-darken-4 bold">Soups</a></li>
+                        <li><a href="chicken.html" class="orange-text text-darken-4 bold">Chicken</a></li>
+                        <li><a href="#reviews" class="orange-text text-darken-4 bold">Reviews</a></li>
+                    </ul>
+
+                    <ul class="sidenav" id="menu">
                         <li><a href="index.html" class="orange-text text-darken-4 bold">Home</a></li>
                         <li><a href="cakes.html" class="orange-text text-darken-4 bold">Cakes</a></li>
                         <li><a href="soups.html" class="orange-text text-darken-4 bold">Soups</a></li>
