@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
+    <title>Cakes</title>
+    <style>
+        @font-face {
+            font-family: 'JosefinSans-Regular';
+            src: url('/fonts/static/JosefinSans-Regular.ttf');
+        }
+
+        *{
+            font-family: 'JosefinSans-Regular';
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        span{
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="white">
+                <div class="nav-wrapper container">
+                    <a href="#" class="brand-logo left hide-on-med-and-down">
+                        <img src="img/logo.png" class="responsive-img" alt="">
+                    </a>
+
+                    <a href="#" class="brand-logo center hide-on-large-only hide-on-extra-large-only">
+                        <img src="img/logo.png" class="responsive-img" alt="">
+                    </a>
+
+                    <a href="#menu" class="sidenav-trigger">
+                        <i class="material-icons orange-text text-darken-4">menu</i>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="orange-text text-darken-4 bold">Home</a></li>
+                        <li><a href="cakes.html" class="orange-text text-darken-4 bold">Cakes</a></li>
+                        <li><a href="soups.html" class="orange-text text-darken-4 bold">Soups</a></li>
+                        <li><a href="chicken.html" class="orange-text text-darken-4 bold">Chicken</a></li>
+                        <li><a href="index.html#reviews" class="orange-text text-darken-4 bold">Reviews</a></li>
+                    </ul>
+
+                    <ul class="sidenav" id="menu">
+                        <li><a href="index.html" class="orange-text text-darken-4 bold">Home</a></li>
+                        <li><a href="cakes.html" class="orange-text text-darken-4 bold">Cakes</a></li>
+                        <li><a href="soups.html" class="orange-text text-darken-4 bold">Soups</a></li>
+                        <li><a href="chicken.html" class="orange-text text-darken-4 bold">Chicken</a></li>
+                        <li><a href="#reviews" class="orange-text text-darken-4 bold">Reviews</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="slider scrollspy" id="cake-top">
+            <ul class="slides">
+                <li>
+                    <img src="img/cake.jpg" alt="" class="responsive-img">
+                    <div class="caption left-align">
+                        <h3>Cakes</h3>
+                        <h5 class="white-text">Here's our cakes list.</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h4 class="orange-text text-darken-4">Cakes</h4>
+            <h6>Cake is a flour confection made from flour, sugar, and other ingredients and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate and which share features with desserts such as pastries, meringues, custards, and pies.</h6>
+
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/sponge_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Sponge Cake</h6>
+                        <p>A light, fluffy classic perfect for any <br> occasion.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#sponge_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="sponge_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Sugar</li>
+                                        <li>Eggs</li>
+                                        <li>Baking Powder</li>
+                                        <li>Butter</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Sponge+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/velvet_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Velvet Cake</h6>
+                        <p>Rich, moist, and elegantly smooth with a hint of cocoa.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#velvet_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="velvet_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Cocoa Powder</li>
+                                        <li>Sugar</li>
+                                        <li>Red Food Coloring</li>
+                                        <li>Vegetable Oil</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Velvet+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/courgette_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Courgette Cake</h6>
+                        <p>A moist and wholesome cake with a fresh twist from courgettes.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#courgette_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="courgette_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Courgette(zucchini)</li>
+                                        <li>Eggs</li>
+                                        <li>Vegetable Oil</li>
+                                        <li>Sugar</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Courgette+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/chocolate_2.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Chocolate Cake</h6>
+                        <p>A rich chocolate sponge layered with smooth vanilla cream for a perfectly balanced bite.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#choco_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="choco_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Sugar</li>
+                                        <li>Eggs</li>
+                                        <li>Cocoa Powder</li>
+                                        <li>Vanilla cream filling</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Chocolate+Cake+with+vanilla+cream+filling" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/coffeeslab_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Coffee Slab Cake</h6>
+                        <p>A soft, coffee-infused delight perfect for every coffee lover.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#coffee_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="coffee_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Coffee</li>
+                                        <li>Sugar</li>
+                                        <li>Eggs</li>
+                                        <li>Butter</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Coffee+Slab+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/pistachio_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Pistachio Cake</h6>
+                        <p>A nutty, elegant treat with a rich flavor perfect for any occasion.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#pistachio_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="pistachio_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Pistachios</li>
+                                        <li>Eggs</li>
+                                        <li>Butter</li>
+                                        <li>Sugar</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Pistachio+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/polenta_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Polenta Cake</h6>
+                        <p>A golden, rustic delight with a unique texture perfect for any occasion.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#polenta_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="polenta_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Almond flour</li>
+                                        <li>Sugar</li>
+                                        <li>Eggs</li>
+                                        <li>Polenta (cornmeal)</li>
+                                        <li>Butter</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Polenta+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/buttermilk_cake.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Buttermilk Cake</h6>
+                        <p>A moist, tender classic with a rich flavor perfect for any occasion.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#buttermilk_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="buttermilk_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Buttermilk</li>
+                                        <li>Sugar</li>
+                                        <li>Eggs</li>
+                                        <li>Butter</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Buttermilk+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img class="responsive-img" src="img/chocolate_1.webp" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <h6 class="orange-text text-darken-4">Peanut Cake</h6>
+                        <p>A nutty, wholesome favorite with a rich taste <br> perfect for any occasion.</p>
+                    </div>
+
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="col s6 m12 l6">
+                                <a href="#peanut_ingredients" class="modal-trigger orange-text text-darken-4">INGREDIENTS</a>
+                                <div class="modal" id="peanut_ingredients">
+                                    <p></p>
+                                    <h6 class="orange-text text-darken-4 pad">Ingredients</h6>
+                                    <ul class="pad">
+                                        <li>Flour</li>
+                                        <li>Peanuts</li>
+                                        <li>Eggs</li>
+                                        <li>Butter</li>
+                                        <li>Sugar</li>
+                                    </ul>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m12 l6">
+                                <a href="https://www.youtube.com/results?search_query=how+to+bake+a+Peanut+Cake" class="orange-text text-darken-4" target="_blank">BAKE NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4></h4>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer black" >
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m3 l3">
+                        <h4><img src="img/logo.png" alt=""></h4>
+                        <p>Your one stop for all cake, soup and chicken recipes. Make something good today.</p>
+                    </div>
+                    <div class="col s12 m5 l5"></div>
+                    <div class="col s12 m3 l3">
+                        <h4 class="orange-text text-darken-4">Quick Links</h4>
+                        <ul>
+                            <li><a href="#cake-top" class="white-text">Back to top</a></li>
+                            <li><a href="cakes.html" class="white-text">Cakes</a></li>
+                            <li><a href="soups.html" class="white-text">Soups</a></li>
+                            <li><a href="chicken.html" class="white-text">Chicken</a></li>
+                            <li><a href="index.html#reviews" class="white-text">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="footer-copyright orange darken-4">
+            <div class="container center">
+                <p>&copy; 2026 Recipe.com | CORE-TECH | COLLINS OGBEBOR</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/JQuery.js"></script>
+<script src="js/materialize.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slider(
+            {
+                height: 400,
+                duration: 3000,
+                interval: 3000,
+                indicators: false
+            }
+        ),
+
+        $('.modal').modal(),
+
+        $('.scrollspy').scrollSpy()
+    });
+</script>
+</html>
