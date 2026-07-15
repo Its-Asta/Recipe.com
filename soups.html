@@ -29,7 +29,51 @@
 </head>
 <body>
     <header>
+        <div class="navbar-fixed">
+            <nav class="white">
+                <div class="nav-wrapper container">
+                    <a href="#" class="brand-logo left hide-on-med-and-down">
+                        <img src="img/logo.png" class="responsive-img" alt="">
+                    </a>
 
+                    <a href="#" class="brand-logo center hide-on-large-only hide-on-extra-large-only">
+                        <img src="img/logo.png" class="responsive-img" alt="">
+                    </a>
+
+                    <a href="#menu" class="sidenav-trigger">
+                        <i class="material-icons orange-text text-darken-4">menu</i>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="orange-text text-darken-4 bold">Home</a></li>
+                        <li><a href="cakes.html" class="orange-text text-darken-4 bold">Cakes</a></li>
+                        <li><a href="soups.html" class="orange-text text-darken-4 bold">Soups</a></li>
+                        <li><a href="chicken.html" class="orange-text text-darken-4 bold">Chicken</a></li>
+                        <li><a href="index.html#reviews" class="orange-text text-darken-4 bold">Reviews</a></li>
+                    </ul>
+
+                    <ul class="sidenav" id="menu">
+                        <li><a href="index.html" class="orange-text text-darken-4 bold">Home</a></li>
+                        <li><a href="cakes.html" class="orange-text text-darken-4 bold">Cakes</a></li>
+                        <li><a href="soups.html" class="orange-text text-darken-4 bold">Soups</a></li>
+                        <li><a href="chicken.html" class="orange-text text-darken-4 bold">Chicken</a></li>
+                        <li><a href="#reviews" class="orange-text text-darken-4 bold">Reviews</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="slider scrollspy" id="cake-top">
+            <ul class="slides">
+                <li>
+                    <img src="img/cake.jpg" alt="" class="responsive-img">
+                    <div class="caption left-align">
+                        <h3>Cakes</h3>
+                        <h5 class="white-text">Here's our cakes list.</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -54,6 +98,8 @@
         ),
 
         $('.modal').modal(),
+
+        $('.sidenav').sidenav(),
 
         $('.scrollspy').scrollSpy()
     });
